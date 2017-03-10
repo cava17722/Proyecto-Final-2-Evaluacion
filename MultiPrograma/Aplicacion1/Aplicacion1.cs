@@ -12,13 +12,19 @@ namespace MultiPrograma.Aplicacion1
 {
     public partial class Aplicacion1 : Form
     {
-       
-        Aplicacion_1 oAplicacion1 = new Aplicacion_1();
+        /// <summary>
+        /// Constructor del formulario
+        /// </summary>
         public Aplicacion1()
         {
             InitializeComponent();
         }
-       
+        /// <summary>
+        /// Metodo que recibe dos numeros positivos o negativos
+        /// </summary>
+        /// <remarks> Se comprueba si es negativo o positivo y realiza la sucesion de sumas para obtener el producto</remarks>
+        /// <param name="iNum"> Valor de tipo int recogido por el evento </param>
+        /// <param name="iNumDos"> Valor de tipo int recogido por el evento </param>
         void SumaProductos (int iNum, int iNumDos)
         {
             int iNumero1;
@@ -52,6 +58,11 @@ namespace MultiPrograma.Aplicacion1
             }
             MessageBox.Show("El producto de los numeros es: " + iNumero1 + " * " + iNumero2 + " = " + sTexto + " = " + iSuma);
         }
+        /// <summary>
+        /// Evento que recoge dos numeros positivos o negativos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BBotonMulti_Click(object sender, EventArgs e)
         {
             int iNum;
