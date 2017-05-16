@@ -19,39 +19,8 @@ namespace MultiPrograma.Aplicacion4
         {
             InitializeComponent();
         }
-        /// <summary>
-        /// Metodo que recibe un numero entero
-        /// </summary>
-        /// <remarks>
-        /// Si el valor esta entre 0 y 100 entra en el while, se inicializa en 1 y se ejecuta hasta
-        /// que llega a 10 y devuelve un texto
-        /// </remarks>
-        /// <param name="iNumero"> Valor de tipo int recogido por el evento </param>
-        void TablaMultiplicar (int iNumero)
-        {
-            int iMultiplo;
-            int iResultado;
-            string sTexto;
-
-            iMultiplo = 1;
-            sTexto = "";
-            iResultado = 0;
-
-            if (iNumero > 0 && iNumero <= 100)
-            {
-                while (iMultiplo <= 10)
-                {
-                    iResultado = iNumero * iMultiplo;
-                    sTexto = sTexto + iNumero + " * " + iMultiplo + " = " + iResultado + "\n";
-                    iMultiplo++;
-                }
-                MessageBox.Show(sTexto);
-            }
-            else
-            {
-                MessageBox.Show("El numero no es correcto");
-            }
-        }
+        Aplicacion4_Logica Tabla = new Aplicacion4_Logica();
+        
         /// <summary>
         /// Evento que recoge un numero entero
         /// </summary>
@@ -60,8 +29,10 @@ namespace MultiPrograma.Aplicacion4
         private void BBotonTabla_Click(object sender, EventArgs e)
         {
             int iNumero;
+            string texto;
             iNumero = int.Parse(TNumTabla.Text);
-            TablaMultiplicar(iNumero);
+            texto = Tabla.TablaMultiplicar(iNumero);
+            MessageBox.Show(texto);
         }
     }
 }

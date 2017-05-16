@@ -19,36 +19,7 @@ namespace MultiPrograma.Aplicacion2
         {
             InitializeComponent();
         }
-        /// <summary>
-        /// Metodo que recibe un numero entero
-        /// </summary>
-        /// <remarks> 
-        /// El for se inicializa en 2 y se ejecuta mientra el 2 sea menor al numero introducido, 
-        /// devuelve bool false o true si es o no es primo
-        /// </remarks>
-        /// <param name="iNumero"> Valor de tipo int recogido por el evento </param>
-        void FuncionPrimo (int iNumero)
-        {
-            bool bPrimo;
-
-            bPrimo = true;
-
-            for (int i = 2; i < iNumero; i++)
-            {
-                if (iNumero % i == 0)
-                {
-                    bPrimo = false;
-                }
-            }
-            if (bPrimo == true)
-            {
-                MessageBox.Show("El numero introducido es primo");
-            }
-            else
-            {
-                MessageBox.Show("El numero introducido no es primo");
-            }
-        }
+       
         /// <summary>
         /// Evento que recoge un numero entero
         /// </summary>
@@ -57,8 +28,12 @@ namespace MultiPrograma.Aplicacion2
         private void BBotonPrimo_Click(object sender, EventArgs e)
         {
             int iNumero;
+            string texto;
+
             iNumero = int.Parse(TNumero.Text);
-            FuncionPrimo(iNumero);
+            texto = Aplicacion2_Logica.FuncionPrimo(iNumero);
+            MessageBox.Show(texto);
         }
     }
+    
 }

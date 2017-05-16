@@ -20,40 +20,8 @@ namespace MultiPrograma.Aplicacion3
         {
             InitializeComponent();
         }
-        /// <summary>
-        /// Metodo que recibe un numero entero
-        /// </summary>
-        /// <remarks> 
-        /// El for se inicializa en 1 y se ejecuta mientras i sea menor al numero introducido, 
-        /// devuelve el resultado de la serie
-        /// </remarks>
-        /// <param name="iNumero"> Valor de tipo int recogido por el evento </param>
-        void Serie (int iNumero)
-        {
-            int i;
-            double dSuma;
-            double dResta;
-            double dResultado;
-
-            i = 1;
-            dSuma = 0;
-            dResta = 0;
-
-            while (i <= iNumero)
-            {
-                if (i % 2 == 0)
-                {
-                    dResta = dResta - (1.0 / i);
-                }
-                else
-                {
-                    dSuma = dSuma + (1.0 / i);
-                }
-                i++;
-            }
-            dResultado = dSuma + dResta;
-            MessageBox.Show("El valor de la serie hasta el numero introducido es: " + dResultado);
-        }
+        Aplicacion3_Logica SerieNumeros  = new Aplicacion3_Logica();
+        
         /// <summary>
         /// Evento que recoge un numero entero
         /// </summary>
@@ -62,8 +30,10 @@ namespace MultiPrograma.Aplicacion3
         private void BBotonSerie_Click(object sender, EventArgs e)
         {
             int iNumero;
+            string texto;
             iNumero = int.Parse(TNumero.Text);
-            Serie(iNumero);
+            texto = SerieNumeros.Serie(iNumero);
+            MessageBox.Show(texto);
         }
     }
 }

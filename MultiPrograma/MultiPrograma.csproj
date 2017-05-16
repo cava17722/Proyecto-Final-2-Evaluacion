@@ -56,24 +56,28 @@
     <Compile Include="Aplicacion1\Aplicacion1.Designer.cs">
       <DependentUpon>Aplicacion1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Aplicacion1\Aplicacion1_Logica.cs" />
     <Compile Include="Aplicacion2\Aplicacion2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Aplicacion2\Aplicacion2.Designer.cs">
       <DependentUpon>Aplicacion2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Aplicacion2\Aplicacion2_Logica.cs" />
     <Compile Include="Aplicacion3\Aplicacion3.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Aplicacion3\Aplicacion3.Designer.cs">
       <DependentUpon>Aplicacion3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Aplicacion3\Aplicacion3_Logica.cs" />
     <Compile Include="Aplicacion4\Aplicacion4.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Aplicacion4\Aplicacion4.Designer.cs">
       <DependentUpon>Aplicacion4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Aplicacion4\Aplicacion4_Logica.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
