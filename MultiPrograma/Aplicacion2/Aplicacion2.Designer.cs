@@ -39,9 +39,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(28, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 13);
+            this.label1.Size = new System.Drawing.Size(292, 13);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Calcula si el numero es primo";
+            this.label1.Text = "Calcula si el numero es primo. El numero debe ser mayor a 0.";
             // 
             // BBotonPrimo
             // 

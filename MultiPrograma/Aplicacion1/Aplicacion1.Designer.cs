@@ -34,16 +34,17 @@
             this.LIntroduceNumeroDos = new System.Windows.Forms.Label();
             this.TNumero = new System.Windows.Forms.TextBox();
             this.LIntroduceNumero = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 28);
+            this.label1.Location = new System.Drawing.Point(22, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(287, 13);
+            this.label1.Size = new System.Drawing.Size(293, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Calcula el producto de un numero usando sumas sucesivas";
+            this.label1.Text = "Calcula el producto de un numero usando sumas sucesivas. ";
             // 
             // BBotonMulti
             // 
@@ -87,11 +88,21 @@
             this.LIntroduceNumero.TabIndex = 5;
             this.LIntroduceNumero.Text = "Introduce Numero";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(22, 45);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(279, 13);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Los valores introducidos pueden ser positivos o negativos";
+            // 
             // Aplicacion1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(473, 298);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.BBotonMulti);
             this.Controls.Add(this.TNumero2);
             this.Controls.Add(this.LIntroduceNumeroDos);
@@ -112,5 +123,6 @@
         private System.Windows.Forms.Label LIntroduceNumeroDos;
         private System.Windows.Forms.TextBox TNumero;
         private System.Windows.Forms.Label LIntroduceNumero;
+        private System.Windows.Forms.Label label2;
     }
 }

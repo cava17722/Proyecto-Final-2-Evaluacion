@@ -32,7 +32,14 @@ namespace MultiPrograma.Aplicacion4
             string texto;
             iNumero = int.Parse(TNumTabla.Text);
             texto = Tabla.TablaMultiplicar(iNumero);
-            MessageBox.Show(texto);
+            if (iNumero > 0 && iNumero <= 100)
+            {
+                MessageBox.Show(texto);
+            }
+            else
+            {
+                MessageBox.Show("El número no esta comprendido entre los valores que permite la aplicacion. Vuelva a intentarlo con los valores permitidos");
+            }
         }
     }
 }

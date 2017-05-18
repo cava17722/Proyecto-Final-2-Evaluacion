@@ -33,7 +33,14 @@ namespace MultiPrograma.Aplicacion3
             string texto;
             iNumero = int.Parse(TNumero.Text);
             texto = SerieNumeros.Serie(iNumero);
-            MessageBox.Show(texto);
+            if (iNumero > 0)
+            {
+                MessageBox.Show(texto);
+            }
+            else
+            {
+                MessageBox.Show("Vuelva a intentarlo con los valores permitidos por la aplicación. Valores mayores a 0");
+            }
         }
     }
 }

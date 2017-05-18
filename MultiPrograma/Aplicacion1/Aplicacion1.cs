@@ -19,7 +19,7 @@ namespace MultiPrograma.Aplicacion1
         {
             InitializeComponent();
         }
-        
+       
         /// <summary>
         /// Evento que recoge dos numeros positivos o negativos
         /// </summary>
@@ -31,12 +31,12 @@ namespace MultiPrograma.Aplicacion1
             int iNum;
             int iNumDos;
             int iSuma;
-
             iNum = int.Parse(TNumero.Text);
             iNumDos = int.Parse(TNumero2.Text);
             Aplicacion1_Logica.SumaProductos(iNum, iNumDos);
             iSuma = Aplicacion1_Logica.SumaProductos(iNum, iNumDos);
             MessageBox.Show("El producto de los numeros es: " + iNum + " * " + iNumDos + " = " + iSuma);
+           
         }
     }
 }
