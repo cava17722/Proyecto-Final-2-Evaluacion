@@ -19,7 +19,7 @@ namespace MultiPrograma.Aplicacion1
         {
             InitializeComponent();
         }
-       
+
         /// <summary>
         /// Evento que recoge dos numeros positivos o negativos
         /// </summary>
@@ -27,7 +27,7 @@ namespace MultiPrograma.Aplicacion1
         /// <param name="e"></param>
         private void BBotonMulti_Click(object sender, EventArgs e)
         {
-           
+
             int iNum;
             int iNumDos;
             int iSuma;
@@ -35,8 +35,15 @@ namespace MultiPrograma.Aplicacion1
             iNumDos = int.Parse(TNumero2.Text);
             Aplicacion1_Logica.SumaProductos(iNum, iNumDos);
             iSuma = Aplicacion1_Logica.SumaProductos(iNum, iNumDos);
-            MessageBox.Show("El producto de los numeros es: " + iNum + " * " + iNumDos + " = " + iSuma);
-           
+            if (iNum < 100 && iNumDos < 100)
+            {
+                MessageBox.Show("El producto de los numeros es: " + iNum + " * " + iNumDos + " = " + iSuma);
+
+            }
+            else
+            {
+                MessageBox.Show("Introduce numeros menores a 100");
+            }
         }
     }
 }

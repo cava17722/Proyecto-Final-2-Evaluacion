@@ -33,6 +33,7 @@
             this.BBotonSerie = new System.Windows.Forms.Button();
             this.TNumero = new System.Windows.Forms.TextBox();
             this.LIntroduceNumero = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -67,6 +68,7 @@
             // TNumero
             // 
             this.TNumero.Location = new System.Drawing.Point(200, 133);
+            this.TNumero.MaxLength = 2;
             this.TNumero.Name = "TNumero";
             this.TNumero.Size = new System.Drawing.Size(113, 20);
             this.TNumero.TabIndex = 8;
@@ -74,17 +76,27 @@
             // LIntroduceNumero
             // 
             this.LIntroduceNumero.AutoSize = true;
-            this.LIntroduceNumero.Location = new System.Drawing.Point(197, 105);
+            this.LIntroduceNumero.Location = new System.Drawing.Point(99, 136);
             this.LIntroduceNumero.Name = "LIntroduceNumero";
             this.LIntroduceNumero.Size = new System.Drawing.Size(95, 13);
             this.LIntroduceNumero.TabIndex = 7;
             this.LIntroduceNumero.Text = "Introduce Numero:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 83);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(366, 13);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Los valores introducidos estan limitados a 2 digitos (numeros menores a 100)";
             // 
             // Aplicacion3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(512, 308);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.BBotonSerie);
             this.Controls.Add(this.TNumero);
             this.Controls.Add(this.LIntroduceNumero);
@@ -104,5 +116,6 @@
         private System.Windows.Forms.Button BBotonSerie;
         private System.Windows.Forms.TextBox TNumero;
         private System.Windows.Forms.Label LIntroduceNumero;
+        private System.Windows.Forms.Label label3;
     }
 }

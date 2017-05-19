@@ -32,6 +32,7 @@
             this.BBotonTabla = new System.Windows.Forms.Button();
             this.TNumTabla = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -56,6 +57,7 @@
             // TNumTabla
             // 
             this.TNumTabla.Location = new System.Drawing.Point(179, 77);
+            this.TNumTabla.MaxLength = 3;
             this.TNumTabla.Name = "TNumTabla";
             this.TNumTabla.Size = new System.Drawing.Size(136, 20);
             this.TNumTabla.TabIndex = 8;
@@ -69,11 +71,21 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Número:";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 34);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(247, 13);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Los valores introducidos estan limitados a 3 digitos ";
+            // 
             // Aplicacion4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(463, 303);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.BBotonTabla);
             this.Controls.Add(this.TNumTabla);
             this.Controls.Add(this.label2);
@@ -91,5 +103,6 @@
         private System.Windows.Forms.Button BBotonTabla;
         private System.Windows.Forms.TextBox TNumTabla;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -46,5 +46,4 @@ namespace MultiPrograma.Aplicacion2
                 return texto;
             }
         }
-    
 }

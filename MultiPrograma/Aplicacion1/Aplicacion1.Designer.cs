@@ -35,6 +35,7 @@
             this.TNumero = new System.Windows.Forms.TextBox();
             this.LIntroduceNumero = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -58,7 +59,8 @@
             // 
             // TNumero2
             // 
-            this.TNumero2.Location = new System.Drawing.Point(155, 195);
+            this.TNumero2.Location = new System.Drawing.Point(156, 208);
+            this.TNumero2.MaxLength = 3;
             this.TNumero2.Name = "TNumero2";
             this.TNumero2.Size = new System.Drawing.Size(128, 20);
             this.TNumero2.TabIndex = 8;
@@ -66,7 +68,7 @@
             // LIntroduceNumeroDos
             // 
             this.LIntroduceNumeroDos.AutoSize = true;
-            this.LIntroduceNumeroDos.Location = new System.Drawing.Point(153, 150);
+            this.LIntroduceNumeroDos.Location = new System.Drawing.Point(153, 179);
             this.LIntroduceNumeroDos.Name = "LIntroduceNumeroDos";
             this.LIntroduceNumeroDos.Size = new System.Drawing.Size(135, 13);
             this.LIntroduceNumeroDos.TabIndex = 7;
@@ -74,15 +76,16 @@
             // 
             // TNumero
             // 
-            this.TNumero.Location = new System.Drawing.Point(148, 104);
+            this.TNumero.Location = new System.Drawing.Point(156, 135);
+            this.TNumero.MaxLength = 3;
             this.TNumero.Name = "TNumero";
-            this.TNumero.Size = new System.Drawing.Size(136, 20);
+            this.TNumero.Size = new System.Drawing.Size(127, 20);
             this.TNumero.TabIndex = 6;
             // 
             // LIntroduceNumero
             // 
             this.LIntroduceNumero.AutoSize = true;
-            this.LIntroduceNumero.Location = new System.Drawing.Point(142, 78);
+            this.LIntroduceNumero.Location = new System.Drawing.Point(153, 104);
             this.LIntroduceNumero.Name = "LIntroduceNumero";
             this.LIntroduceNumero.Size = new System.Drawing.Size(92, 13);
             this.LIntroduceNumero.TabIndex = 5;
@@ -97,11 +100,21 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Los valores introducidos pueden ser positivos o negativos";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(22, 71);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(366, 13);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Los valores introducidos estan limitados a 3 digitos (numeros menores a 100)";
+            // 
             // Aplicacion1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(473, 298);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BBotonMulti);
             this.Controls.Add(this.TNumero2);
@@ -124,5 +137,6 @@
         private System.Windows.Forms.TextBox TNumero;
         private System.Windows.Forms.Label LIntroduceNumero;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
